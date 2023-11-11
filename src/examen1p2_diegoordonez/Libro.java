@@ -14,11 +14,11 @@ public class Libro {
     public Libro() {
     }
 
-    public Libro(String Titulo, String Autor, double Precio, int Edicion) {
+    public Libro(String Titulo, String Autor, double Precio) {
         this.Titulo = Titulo;
         this.Autor = Autor;
         this.Precio = Precio;
-        this.Edicion = Edicion;
+        
     }
 
     public String getTitulo() {
@@ -55,7 +55,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" + "Titulo=" + Titulo + ", Autor=" + Autor + ", Precio=" + Precio + ", Edicion=" + Edicion + '}';
+        return  "Titulo"+" " + Titulo +"\n"+ ", Autor=" + Autor + ", Precio=" + Precio + ", Edicion=" + Edicion + '}';
     }
     
     

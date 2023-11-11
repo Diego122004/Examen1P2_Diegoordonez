@@ -18,8 +18,8 @@ public class Libro_NF extends Libro{
         this.TipoL = TipoL;
     }
 
-    public Libro_NF(String TipoL, String Titulo, String Autor, double Precio, int Edicion) {
-        super(Titulo, Autor, Precio, Edicion);
+    public Libro_NF(String TipoL, String Titulo, String Autor, double Precio) {
+        super(Titulo, Autor, Precio);
         this.TipoL = TipoL;
     }
 
@@ -34,7 +34,7 @@ public class Libro_NF extends Libro{
 
     @Override
     public String toString() {
-        return "Libro_NF{" + "TipoL=" + TipoL + '}';
+        return super.toString();
     }
     
 }

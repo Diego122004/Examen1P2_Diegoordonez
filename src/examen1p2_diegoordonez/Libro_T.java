@@ -15,8 +15,8 @@ public class Libro_T extends Libro{
         this.Facu = Facu;
     }
 
-    public Libro_T(int Curso, String Facu, String Titulo, String Autor, double Precio, int Edicion) {
-        super(Titulo, Autor, Precio, Edicion);
+    public Libro_T(int Curso, String Facu, String Titulo, String Autor, double Precio) {
+        super(Titulo, Autor, Precio);
         this.Curso = Curso;
         this.Facu = Facu;
     }
