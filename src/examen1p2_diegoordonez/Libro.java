@@ -4,8 +4,8 @@
  */
 package examen1p2_diegoordonez;
 
-
 public class Libro {
+
     protected String Titulo;
     protected String Autor;
     protected double Precio;
@@ -18,7 +18,7 @@ public class Libro {
         this.Titulo = Titulo;
         this.Autor = Autor;
         this.Precio = Precio;
-        
+
     }
 
     public String getTitulo() {
@@ -55,8 +55,11 @@ public class Libro {
 
     @Override
     public String toString() {
-        return  "Titulo"+" " + Titulo +"\n"+ ", Autor=" + Autor + ", Precio=" + Precio + ", Edicion=" + Edicion + '}';
+        return "Título: " + Titulo + "\n"
+                + "Autor: " + Autor + "\n"
+                + "Libro\n"
+                + "Edición: " + Edicion + "\n"
+                + "Precio: $" + Precio;
     }
-    
-    
+
 }

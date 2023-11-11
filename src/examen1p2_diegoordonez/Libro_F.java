@@ -33,7 +33,7 @@ public class Libro_F extends Libro{
 
     @Override
     public String toString() {
-        return "Libro_F{" + "TipoL=" + TipoL + '}';
+        return super.toString();
     }
     
 }
