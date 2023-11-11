@@ -77,9 +77,9 @@ public class Login extends javax.swing.JFrame {
         jcb_listar_libro = new javax.swing.JComboBox<>();
         jPanel8 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        jcb_editL_typ = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox<>();
+        jcb_editL_libro = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         jLabel15 = new javax.swing.JLabel();
@@ -498,11 +498,15 @@ public class Login extends javax.swing.JFrame {
 
         jLabel13.setText("Tipo");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jcb_editL_typ.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Libros_Texto", "Libros_Referencia", "Libros_Ficcion", "Libros_NoFiccion" }));
 
         jLabel14.setText("Libro");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jcb_editL_libro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcb_editL_libroActionPerformed(evt);
+            }
+        });
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
@@ -540,8 +544,8 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBox5, 0, 145, Short.MAX_VALUE)
-                            .addComponent(jComboBox6, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jcb_editL_typ, 0, 145, Short.MAX_VALUE)
+                            .addComponent(jcb_editL_libro, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(76, 76, 76)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -559,12 +563,12 @@ public class Login extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(57, 57, 57)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jcb_editL_typ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jcb_editL_libro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -665,7 +669,7 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(288, Short.MAX_VALUE))
         );
 
-        Jt_opciones.addTab("tab5", jPanel11);
+        Jt_opciones.addTab("SALIR", jPanel11);
 
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
@@ -673,9 +677,9 @@ public class Login extends javax.swing.JFrame {
 
         jLabel20.setText("Tipo");
 
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Libros_Texto", "Libros_Referencia", "Libros_Ficcion", "Libros_NoFiccion" }));
 
-        jLabel21.setText("jLabel21");
+        jLabel21.setText("Libro");
 
         jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -979,6 +983,10 @@ String tempNF ="";
        System.exit(0);
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jcb_editL_libroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcb_editL_libroActionPerformed
+        
+    }//GEN-LAST:event_jcb_editL_libroActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1037,8 +1045,6 @@ String tempNF ="";
     private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox11;
     private javax.swing.JComboBox<String> jComboBox12;
-    private javax.swing.JComboBox<String> jComboBox5;
-    private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
@@ -1104,6 +1110,8 @@ String tempNF ="";
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextTitulo;
     private javax.swing.JTextField jTextautor;
+    private javax.swing.JComboBox<String> jcb_editL_libro;
+    private javax.swing.JComboBox<String> jcb_editL_typ;
     private javax.swing.JComboBox<String> jcb_listar_libro;
     private javax.swing.JComboBox<String> jcb_lr;
     private javax.swing.JTextArea jta_listar;
